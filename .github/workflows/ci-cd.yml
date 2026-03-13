@@ -1,0 +1,27 @@
+name: ci-cd
+
+on:
+  push:
+    branches: ["main", "feature/**"]
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Backend tests
+        run: dotnet test backend/tests/PurviewOps.Api.Tests.csproj
+      - name: Worker tests
+        run: dotnet test worker/tests/PurviewOps.Worker.Tests.csproj
+      - name: Frontend tests
+        run: |
+          cd frontend
+          npm install
+          npm test

@@ -1,0 +1,7 @@
+:root { font-family: Inter, system-ui, sans-serif; }
+body { margin: 0; background: #0b1220; color: #e5e7eb; }
+a { color: #93c5fd; text-decoration: none; }
+.container { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+.nav { border-right: 1px solid #1f2937; padding: 16px; }
+.main { padding: 20px; }
+.card { background: #111827; border: 1px solid #374151; border-radius: 8px; padding: 16px; margin-bottom: 12px; }

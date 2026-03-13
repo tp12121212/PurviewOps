@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+bin/
+obj/
+.env
+.env.*
+TestResults/
+artifacts/
+*.user
+*.suo
