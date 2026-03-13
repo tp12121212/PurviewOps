@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
 ## A. Executive summary
 
 A cloud‑hosted multi‑tenant web app that lets authenticated Microsoft 365 admins run many of the listed DLP/Purview/EXO cmdlets via HTTPS is **technically feasible**, but only by relying heavily on **undocumented Exchange / compliance “Admin API” proxy endpoints** that Microsoft explicitly does not position as a general‑purpose management surface.[^1_1][^1_2][^1_3]
